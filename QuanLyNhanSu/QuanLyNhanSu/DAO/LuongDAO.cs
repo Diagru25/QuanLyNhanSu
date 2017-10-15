@@ -9,6 +9,13 @@ namespace QuanLyNhanSu.DAO
 {
     public class LuongDAO
     {
-        
+        public static DataTable LoadcboLuong()
+        {
+            string query = "SELECT LUONGID FROM LUONG";
+
+            DataTable data = SqlServerHelper.ExecuteQuery(query);
+
+            return data;
+        }
     }
 }
