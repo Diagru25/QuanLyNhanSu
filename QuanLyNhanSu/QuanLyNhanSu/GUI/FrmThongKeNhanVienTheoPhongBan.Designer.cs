@@ -91,6 +91,7 @@
             this.btnThongKePhongBan.Size = new System.Drawing.Size(149, 34);
             this.btnThongKePhongBan.TabIndex = 12;
             this.btnThongKePhongBan.Text = "Thống kê";
+            this.btnThongKePhongBan.Click += new System.EventHandler(this.btnThongKePhongBan_Click);
             // 
             // cboPhongBan
             // 
@@ -132,6 +133,7 @@
             this.btnThongKeChucVu.Size = new System.Drawing.Size(149, 34);
             this.btnThongKeChucVu.TabIndex = 12;
             this.btnThongKeChucVu.Text = "Thống kê";
+            this.btnThongKeChucVu.Click += new System.EventHandler(this.btnThongKeChucVu_Click);
             // 
             // cboChucVu
             // 
@@ -160,6 +162,7 @@
             this.btnXuat.Size = new System.Drawing.Size(466, 43);
             this.btnXuat.TabIndex = 101;
             this.btnXuat.Text = "Xuất ra file excel";
+            this.btnXuat.Click += new System.EventHandler(this.btnXuat_Click);
             // 
             // btnDong
             // 
@@ -170,6 +173,7 @@
             this.btnDong.Size = new System.Drawing.Size(466, 43);
             this.btnDong.TabIndex = 100;
             this.btnDong.Text = "Đóng chức năng";
+            this.btnDong.Click += new System.EventHandler(this.btnDong_Click);
             // 
             // dgrThongKeSinhNhat
             // 
