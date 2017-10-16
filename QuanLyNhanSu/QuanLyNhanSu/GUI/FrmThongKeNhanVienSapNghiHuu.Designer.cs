@@ -67,6 +67,7 @@
             this.btnDong.Size = new System.Drawing.Size(466, 43);
             this.btnDong.TabIndex = 106;
             this.btnDong.Text = "Đóng chức năng";
+            this.btnDong.Click += new System.EventHandler(this.btnDong_Click);
             // 
             // btnXuat
             // 
@@ -77,6 +78,7 @@
             this.btnXuat.Size = new System.Drawing.Size(466, 43);
             this.btnXuat.TabIndex = 107;
             this.btnXuat.Text = "Xuất ra file excel";
+            this.btnXuat.Click += new System.EventHandler(this.btnXuat_Click);
             // 
             // groupBox1
             // 
@@ -122,6 +124,7 @@
             this.btnThongKe.Size = new System.Drawing.Size(149, 34);
             this.btnThongKe.TabIndex = 12;
             this.btnThongKe.Text = "Thống kê";
+            this.btnThongKe.Click += new System.EventHandler(this.btnThongKe_Click);
             // 
             // label3
             // 
