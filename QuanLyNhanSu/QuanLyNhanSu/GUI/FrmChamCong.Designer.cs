@@ -183,6 +183,7 @@
             this.btnSua.Size = new System.Drawing.Size(252, 43);
             this.btnSua.TabIndex = 21;
             this.btnSua.Text = "Sửa";
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnThem
             // 
@@ -193,6 +194,7 @@
             this.btnThem.Size = new System.Drawing.Size(510, 43);
             this.btnThem.TabIndex = 20;
             this.btnThem.Text = "Thêm";
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // btnXoa
             // 
@@ -203,6 +205,7 @@
             this.btnXoa.Size = new System.Drawing.Size(252, 43);
             this.btnXoa.TabIndex = 19;
             this.btnXoa.Text = "Xóa";
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnDong
             // 
@@ -213,6 +216,7 @@
             this.btnDong.Size = new System.Drawing.Size(510, 43);
             this.btnDong.TabIndex = 18;
             this.btnDong.Text = "Đóng chức năng";
+            this.btnDong.Click += new System.EventHandler(this.btnDong_Click);
             // 
             // groupBox2
             // 
@@ -237,6 +241,7 @@
             this.simpleButton5.Size = new System.Drawing.Size(200, 34);
             this.simpleButton5.TabIndex = 13;
             this.simpleButton5.Text = "Hiển thị danh sách chấm công";
+            this.simpleButton5.Click += new System.EventHandler(this.simpleButton5_Click);
             // 
             // cboThang
             // 
@@ -268,6 +273,7 @@
             this.cboNhanVien.Name = "cboNhanVien";
             this.cboNhanVien.Size = new System.Drawing.Size(247, 21);
             this.cboNhanVien.TabIndex = 2;
+            this.cboNhanVien.SelectedValueChanged += new System.EventHandler(this.cboNhanVien_SelectedValueChanged);
             // 
             // label4
             // 
