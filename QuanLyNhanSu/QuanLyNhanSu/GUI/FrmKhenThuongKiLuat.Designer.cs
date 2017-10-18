@@ -73,6 +73,7 @@
             this.cboNhanVien.Name = "cboNhanVien";
             this.cboNhanVien.Size = new System.Drawing.Size(197, 21);
             this.cboNhanVien.TabIndex = 67;
+            this.cboNhanVien.SelectedValueChanged += new System.EventHandler(this.cboNhanVien_SelectedValueChanged);
             // 
             // dgrKTKL
             // 
@@ -108,6 +109,7 @@
             this.btnDong.Size = new System.Drawing.Size(510, 43);
             this.btnDong.TabIndex = 77;
             this.btnDong.Text = "Đóng chức năng";
+            this.btnDong.Click += new System.EventHandler(this.btnDong_Click);
             // 
             // btnSua
             // 
@@ -118,6 +120,7 @@
             this.btnSua.Size = new System.Drawing.Size(252, 43);
             this.btnSua.TabIndex = 80;
             this.btnSua.Text = "Sửa";
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // label3
             // 
@@ -137,6 +140,7 @@
             this.btnThem.Size = new System.Drawing.Size(252, 43);
             this.btnThem.TabIndex = 79;
             this.btnThem.Text = "Thêm";
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // groupBox1
             // 
@@ -214,6 +218,7 @@
             this.btnXoa.Size = new System.Drawing.Size(510, 43);
             this.btnXoa.TabIndex = 78;
             this.btnXoa.Text = "Xóa";
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnXuat
             // 
@@ -224,6 +229,7 @@
             this.btnXuat.Size = new System.Drawing.Size(510, 43);
             this.btnXuat.TabIndex = 82;
             this.btnXuat.Text = "Xuất ra file excel";
+            this.btnXuat.Click += new System.EventHandler(this.btnXuat_Click);
             // 
             // gridColumn1
             // 
