@@ -42,14 +42,14 @@
             this.btnSua = new DevExpress.XtraEditors.SimpleButton();
             this.dgrBangCap = new DevExpress.XtraGrid.GridControl();
             this.grvBangCap = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.btnXoa = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.label3 = new System.Windows.Forms.Label();
             this.btnXuat = new DevExpress.XtraEditors.SimpleButton();
+            this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dtpThoiGian.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtpThoiGian.Properties)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -78,6 +78,7 @@
             this.cboBangCap.Name = "cboBangCap";
             this.cboBangCap.Size = new System.Drawing.Size(197, 21);
             this.cboBangCap.TabIndex = 43;
+            this.cboBangCap.SelectedValueChanged += new System.EventHandler(this.cboBangCap_SelectedValueChanged);
             // 
             // btnThem
             // 
@@ -88,6 +89,7 @@
             this.btnThem.Size = new System.Drawing.Size(252, 43);
             this.btnThem.TabIndex = 48;
             this.btnThem.Text = "Thêm";
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // groupBox1
             // 
@@ -156,6 +158,7 @@
             this.btnSua.Size = new System.Drawing.Size(252, 43);
             this.btnSua.TabIndex = 49;
             this.btnSua.Text = "Sửa";
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // dgrBangCap
             // 
@@ -182,6 +185,48 @@
             this.grvBangCap.OptionsDetail.DetailMode = DevExpress.XtraGrid.Views.Grid.DetailMode.Default;
             this.grvBangCap.PaintStyleName = "Flat";
             this.grvBangCap.RowHeight = 30;
+            // 
+            // btnXoa
+            // 
+            this.btnXoa.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Flat;
+            this.btnXoa.Image = ((System.Drawing.Image)(resources.GetObject("btnXoa.Image")));
+            this.btnXoa.Location = new System.Drawing.Point(722, 373);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(510, 43);
+            this.btnXoa.TabIndex = 47;
+            this.btnXoa.Text = "Xóa";
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
+            // 
+            // simpleButton1
+            // 
+            this.simpleButton1.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Flat;
+            this.simpleButton1.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.Image")));
+            this.simpleButton1.Location = new System.Drawing.Point(722, 471);
+            this.simpleButton1.Name = "simpleButton1";
+            this.simpleButton1.Size = new System.Drawing.Size(510, 43);
+            this.simpleButton1.TabIndex = 46;
+            this.simpleButton1.Text = "Đóng chức năng";
+            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(35, 19);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(178, 13);
+            this.label3.TabIndex = 50;
+            this.label3.Text = "Danh sách bằng cấp của nhân viên";
+            // 
+            // btnXuat
+            // 
+            this.btnXuat.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Flat;
+            this.btnXuat.Image = ((System.Drawing.Image)(resources.GetObject("btnXuat.Image")));
+            this.btnXuat.Location = new System.Drawing.Point(722, 422);
+            this.btnXuat.Name = "btnXuat";
+            this.btnXuat.Size = new System.Drawing.Size(510, 43);
+            this.btnXuat.TabIndex = 83;
+            this.btnXuat.Text = "Xuất ra file excel";
+            this.btnXuat.Click += new System.EventHandler(this.btnXuat_Click);
             // 
             // gridColumn1
             // 
@@ -214,45 +259,6 @@
             this.gridColumn4.Name = "gridColumn4";
             this.gridColumn4.Visible = true;
             this.gridColumn4.VisibleIndex = 3;
-            // 
-            // btnXoa
-            // 
-            this.btnXoa.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Flat;
-            this.btnXoa.Image = ((System.Drawing.Image)(resources.GetObject("btnXoa.Image")));
-            this.btnXoa.Location = new System.Drawing.Point(722, 373);
-            this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(510, 43);
-            this.btnXoa.TabIndex = 47;
-            this.btnXoa.Text = "Xóa";
-            // 
-            // simpleButton1
-            // 
-            this.simpleButton1.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Flat;
-            this.simpleButton1.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.Image")));
-            this.simpleButton1.Location = new System.Drawing.Point(722, 471);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(510, 43);
-            this.simpleButton1.TabIndex = 46;
-            this.simpleButton1.Text = "Đóng chức năng";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(35, 19);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(178, 13);
-            this.label3.TabIndex = 50;
-            this.label3.Text = "Danh sách bằng cấp của nhân viên";
-            // 
-            // btnXuat
-            // 
-            this.btnXuat.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Flat;
-            this.btnXuat.Image = ((System.Drawing.Image)(resources.GetObject("btnXuat.Image")));
-            this.btnXuat.Location = new System.Drawing.Point(722, 422);
-            this.btnXuat.Name = "btnXuat";
-            this.btnXuat.Size = new System.Drawing.Size(510, 43);
-            this.btnXuat.TabIndex = 83;
-            this.btnXuat.Text = "Xuất ra file excel";
             // 
             // FrmBangCap
             // 
